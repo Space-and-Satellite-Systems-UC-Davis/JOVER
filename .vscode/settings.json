@@ -1,0 +1,33 @@
+{
+    "ROS2.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.runAutomatically": true,
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**"
+    ],
+    "C_Cpp.exclusionPolicy": "checkFolders",
+    "files.exclude": {
+        "**/.cache": true
+    },
+    "C_Cpp.loggingLevel": "Warning",
+    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "C_Cpp.dimInactiveRegions": false,
+    "C_Cpp.codeAnalysis.exclude": {
+        "/usr/**": true,
+        "/opt/ros/**": true,
+        "${workspaceFolder}/build/**": true,
+        "${workspaceFolder}/install/**": true,
+        "${workspaceFolder}/log/**": true
+    },
+    "cmake.ignoreCMakeListsMissing": true
+}
