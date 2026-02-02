@@ -40,14 +40,35 @@ set(cpu_PARAMS
     # -mcpu, -mfloat, -mfloat-abi, ...
 )
 
+# S3: To clarify
+# In order to import the headers, we need to have them as a source, to compile.
+# Then, we need to make sure they are in a place the compiler can find them.
+# If it's a local path, no need to add include directories. Otherwise,
+# we append target_include_directories by way of include_DIRS
+
 # Sources
 set(sources_SRCS
-	${CMAKE_CURRENT_SOURCE_DIR}/Src/main.c
+	${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/inc/globals.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/tools/utils.c
+
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device/stm32g4xx.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device/stm32g474xx.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device/system_stm32g4xx.h
+
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/cmsis_compiler.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/cmsis_gcc.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/cmsis_version.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/core_cm4.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/mpu_armv7.h
+
 )
 
 # Include directories for all compilers
 set(include_DIRS
-	${CMAKE_CURRENT_SOURCE_DIR}/Inc
+	${CMAKE_CURRENT_SOURCE_DIR}/src/inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device
 )
 
 # Include directories for each compiler
