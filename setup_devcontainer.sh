@@ -1,0 +1,1 @@
+devcontainer templates apply --template-id ghcr.io/space-and-satellite-systems-uc-davis/ros-container/ros-devcontainer
