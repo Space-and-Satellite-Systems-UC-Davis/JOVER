@@ -19,7 +19,7 @@
 #include <stdint.h>
  
 int main(void)
-{
+{ 
     // test22(); 
       
     /* Loop forever */
