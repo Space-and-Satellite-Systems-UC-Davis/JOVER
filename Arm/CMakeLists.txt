@@ -50,10 +50,9 @@ set(cpu_PARAMS
 set(sources_SRCS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/inc/globals.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/tools/utils.c
 
-    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device/stm32g4xx.h
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device/stm32g474xx.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device/stm32g4xx.h
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device/system_stm32g4xx.h
 
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/cmsis_compiler.h
@@ -77,7 +76,9 @@ set(include_cxx_DIRS)
 set(include_asm_DIRS)
 
 # Symbols definition for all compilers
-set(symbols_SYMB)
+set(symbols_SYMB
+    STM32G474xx
+)
 
 # Symbols definition for each compiler
 set(symbols_c_SYMB)
