@@ -107,9 +107,9 @@ cython_debug/
 # ---
 
 # VSCode
-# .vscode
+.vscode
 .settings
-# .vscode/*
+.vscode/*
 !.vscode/c_cpp_properties.json
 !.vscode/settings.json
 !.vscode/tasks.json
