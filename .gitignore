@@ -4,7 +4,7 @@ install
 log
 
 # Ignore everything in src except a .gitkeep file
-src/*
+!src/*
 !src/.gitkeep
 
 # ---
