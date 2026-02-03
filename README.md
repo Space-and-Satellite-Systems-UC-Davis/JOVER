@@ -1,9 +1,14 @@
 ## Devcontainer
-Run the setup_devcontainer.sh to get the latest version of the devcontainer.
+To get the newsest version
+if you are in the devcontainer already, you can skip this step.
+
+If you are in windows, go into wsl first.
 
 To run the devcontainer, installed the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) Extension.
 
-For how to open to container, follow the [VSCode documentation](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container).
+You must also install the devcontainer cli first. After installign the extension, use (View -> Command Pallete -> Dev Containers: Install devcontainer CLI) to install the devcontainer cli. You might have to restart your computer.
+
+For how to open the container, follow the [VSCode documentation](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container).
 
 You can edit the produced devcontainer file locally. To make modification remotely, see the ros-container repo.
 
