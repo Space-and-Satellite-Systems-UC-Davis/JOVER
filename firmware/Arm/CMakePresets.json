@@ -16,6 +16,7 @@
             "inherits": "default",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",
+
                 "CMSIS_Dvendor": "STMicroelectronics:13",
                 "CMSIS_Dname": "STM32G474RET6",
                 "CMSIS_Dcore": "Cortex-M4",
@@ -34,6 +35,7 @@
             "inherits": "default",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release",
+
                 "CMSIS_Dvendor": "STMicroelectronics:13",
                 "CMSIS_Dname": "STM32G474RET6",
                 "CMSIS_Dcore": "Cortex-M4",
@@ -54,7 +56,7 @@
             "hidden": true,
             "configurePreset": "default"
         },
-        {
+                {
             "name": "Debug",
             "configurePreset": "Debug"
         },
