@@ -4,7 +4,7 @@ install
 log
 
 # Ignore everything in src except a .gitkeep file
-src/*
+!src/*
 !src/.gitkeep
 
 # ---
@@ -123,3 +123,5 @@ cython_debug/
 
 # Macos extended attr
 .DS_Store
+
+.devcontainer
