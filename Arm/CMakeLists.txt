@@ -49,7 +49,6 @@ set(cpu_PARAMS
 # Sources
 set(sources_SRCS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/inc/globals.h
 
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device/stm32g474xx.h
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device/stm32g4xx.h
@@ -68,6 +67,11 @@ set(include_DIRS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS
     ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Device
+)
+
+# Added by S3. Add a line whenever you add a new subdirectory CMakeLists.txt
+set(add_SUBDIRS
+	${CMAKE_CURRENT_SOURCE_DIR}/src/inc
 )
 
 # Include directories for each compiler
@@ -109,6 +113,9 @@ link_directories(${CMAKE_PROJECT_NAME} ${link_DIRS})
 
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME})
+
+# Added by S3
+add_subdirectory(${add_SUBDIRS} EXCLUDE_FROM_ALL)
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PUBLIC ${sources_SRCS})

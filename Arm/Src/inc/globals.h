@@ -4,7 +4,7 @@
 #include "stm32g474xx.h"
 
 typedef enum {false, true} bool;
-#define NULL 0
+#define NULL 0 
 
 
 #endif // JOVER_GLOBALS_H_
