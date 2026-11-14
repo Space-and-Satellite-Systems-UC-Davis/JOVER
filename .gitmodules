@@ -1,0 +1,10 @@
+[submodule "firmware/control_board/micro_ros_stm32cubemx_utils"]
+	path = firmware/control_board/micro_ros_stm32cubemx_utils
+	url = https://github.com/micro-ROS/micro_ros_stm32cubemx_utils
+	branch = jazzy
+
+[submodule "firmware/stm32g474re/micro_ros_stm32cubemx_utils"]
+	path = firmware/stm32g474re/micro_ros_stm32cubemx_utils
+	url = https://github.com/micro-ROS/micro_ros_stm32cubemx_utils
+	branch = jazzy
+
