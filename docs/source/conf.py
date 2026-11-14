@@ -1,6 +1,6 @@
 # Configuration file for the Sphinx documentation builder.
 
-import subprocess, os
+import subprocess, os, sys
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
 # Build doxygen XML if on building on RTD server
@@ -25,6 +25,11 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'myst_parser',
+
+    # For Breathe
+    'sphinx.ext.pngmath', 
+    'sphinx.ext.todo', 
+    'breathe'
 ]
 
 templates_path = ['_templates']
@@ -35,3 +40,8 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# Using Breathe and Doxygen
+sys.path.append(f"{os.getcwd()}/../../ext/breathe/")
+breathe_projects = {"JOVER": f"{os.getcwd()}/../../doxyxml/"}
+breathe_default_project = "JOVER"

@@ -1,0 +1,2 @@
+.. autodoxygenindex::
+    :project: auto
