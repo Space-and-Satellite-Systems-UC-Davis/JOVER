@@ -1,2 +1,2 @@
 .. autodoxygenindex::
-    :project: auto
+    :project: JOVER
