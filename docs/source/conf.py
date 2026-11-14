@@ -45,7 +45,3 @@ epub_show_urls = 'footnote'
 sys.path.append(f"{os.getcwd()}/../../ext/breathe/")
 breathe_projects = {"JOVER": f"{os.getcwd()}/../../doxyxml/"}
 breathe_default_project = "JOVER"
-breathe_projects_source = {
-    "JOVER" : ( f"{os.getcwd()}/../../firmware/stm32g474re/Core/Src/system_config/UART", 
-               ["uros_transport.h"] )
-}
