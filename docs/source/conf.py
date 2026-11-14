@@ -27,7 +27,7 @@ extensions = [
     'myst_parser',
 
     # For Breathe
-    'sphinx.ext.pngmath', 
+    # 'sphinx.ext.pngmath', 
     'sphinx.ext.todo', 
     'breathe'
 ]
