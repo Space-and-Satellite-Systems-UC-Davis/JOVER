@@ -65,8 +65,8 @@ static void MX_GPIO_Init(void);
   * @retval int
   */
 
-#define RUN_TEST	    0	// 0 = run JOVER, 1 = run a very specific test, 2 = run all tests
-#define TEST_ID 	    0	// ID of the test to run in case RUN_TEST = 1
+#define RUN_TEST	    1	// 0 = run JOVER, 1 = run a very specific test, 2 = run all tests
+#define TEST_ID 	    3	// ID of the test to run in case RUN_TEST = 1
 
 
 int main(void)
@@ -79,7 +79,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+HAL_Init();
 
   /* USER CODE BEGIN Init */
 

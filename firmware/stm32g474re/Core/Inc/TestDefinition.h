@@ -20,6 +20,7 @@ TestStatus testFunction_Nothing();
 
 extern TestStatus testFunction_UART_TXRX_Loopback();
 extern TestStatus testFunction_UART_TX_External();
+extern TestStatus testFunction_Watchdog_Reset();
 
 //-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 //                           TEST REGISTRATION
