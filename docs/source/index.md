@@ -6,6 +6,8 @@
    - works. 
 
 ```{toctree}
+:titlesonly:
 
 Testing.md
+autoindex.rst
 ```
