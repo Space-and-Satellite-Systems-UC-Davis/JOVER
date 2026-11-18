@@ -1,13 +1,9 @@
-# Test 
-
-- See
-- if
-- this
-   - works. 
+# Index page 
+See your individual team's home page below
 
 ```{toctree}
 :titlesonly:
 
-Testing.md
-autoindex.rst
+firmware/Firmware.md
+controls/Controls.md
 ```
