@@ -1,6 +1,10 @@
-# Test 
+# Index page 
+See your individual team's home page below
 
-- See
-- if
-- this
-   - works. 
+```{toctree}
+:titlesonly:
+:maxdepth: 1
+
+firmware/Firmware.md
+controls/Controls.md
+```

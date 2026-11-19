@@ -1,0 +1,4 @@
+[submodule "ext/breathe"]
+	path = ext/breathe
+	url = https://github.com/breathe-doc/breathe.git
+	branch = tags/v5.1.0
