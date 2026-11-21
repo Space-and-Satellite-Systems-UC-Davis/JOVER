@@ -28,9 +28,9 @@ Include such comments above every function in your header files. At least includ
 To add a page describing the header, create a new file `<Filename>.md` somewhere that it belongs under `docs/source`. Include it in the toctree of another document like `Firmware.md` or `Controls.md`. Include a short description of the component or feature at the top, then include the following below:
 
 ````
-```{doxygenfile} <Filename>.md
+```{doxygenfile} <Filename>.h
    :project: JOVER
 ```
 ````
 
-Once built, it should list all of the documented functions in `<Filename>.md`
+Once built, it should list all of the documented functions in `<Filename>.h`
