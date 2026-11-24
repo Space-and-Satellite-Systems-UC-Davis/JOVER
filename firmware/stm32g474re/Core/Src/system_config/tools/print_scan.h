@@ -3,6 +3,9 @@
 #ifndef REALOP1_PRINT_SCAN_H_
 #define REALOP1_PRINT_SCAN_H_
 
+#include <stdint.h>
+#include <stddef.h>
+
 /**
  * Initializes the internal systems needed for Console Printing
  *
