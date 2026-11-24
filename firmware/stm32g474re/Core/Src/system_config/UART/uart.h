@@ -4,8 +4,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-
-/*
+/** 
  * @brief Initializes a USART peripheral.
  *
  * Configures the desired USART peripheral using the supplied baud rate.
@@ -20,7 +19,7 @@
  */
 bool usart_init(USART_TypeDef *uart, int baud_rate);
 
-/*
+/**
  * @brief Transmits a null-terminated string over UART.
  *
  * Blocks until all characters have been transmitted.
@@ -32,7 +31,7 @@ bool usart_init(USART_TypeDef *uart, int baud_rate);
  */
 void usart_transmitString(USART_TypeDef *uart, const char *msg);
 
-/*
+/**
  * @brief Transmits an array of bytes over UART.
  *
  * Blocks until all bytes have been transmitted.
@@ -45,7 +44,7 @@ void usart_transmitString(USART_TypeDef *uart, const char *msg);
  */
 void usart_transmitBytes(USART_TypeDef *uart, const uint8_t bytes[], int nbytes);
 
-/*
+/**
  * @brief Receive bytes over UART.
  *
  * Reads bytes from an internal RX buffer and stores those
@@ -61,7 +60,7 @@ void usart_transmitBytes(USART_TypeDef *uart, const uint8_t bytes[], int nbytes)
  */
 int usart_receiveBytes(USART_TypeDef *uart, uint8_t buffer[], int nbytes);
 
-/*
+/**
  * @brief Check if the internal RX buffer is full.
  *
  * Total capacity of the RX buffer is (RX_CAP - 1).
@@ -76,7 +75,7 @@ int usart_receiveBytes(USART_TypeDef *uart, uint8_t buffer[], int nbytes);
  */
 bool usart_rxIsFull(USART_TypeDef *uart);
 
-/*
+/**
  * @brief Check if the internal receive buffer is empty.
  *
  * @param uart USART peripheral to check.
