@@ -6,6 +6,7 @@
 
 Testing.md
 Documentation.md
+Used_Hardware.md
 ```
 
 ## Individual components:
