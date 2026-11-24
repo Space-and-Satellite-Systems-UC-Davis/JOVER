@@ -12,6 +12,7 @@ TestStatus (*all_tests[])() = {
 		testFunction_Nothing,
 		testFunction_UART_TXRX_Loopback,
 		testFunction_UART_TX_External,
+		testFunction_print_scan,
 };
 
 //-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
@@ -28,6 +29,8 @@ TestStatus (*getTestFunction(int test_id))() {
 			return testFunction_UART_TXRX_Loopback;
 		case 2:
 			return testFunction_UART_TX_External;
+		case 3:
+			return testFunction_print_scan;
 	}
 	return testFunction_Nothing;
 }
